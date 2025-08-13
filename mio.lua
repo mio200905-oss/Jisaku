@@ -43,8 +43,15 @@ local PlayerTab = Window:CreateTab("main", 4483362458) --Title,　Image
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
-   -- The function that takes place when the toggle is pressed
-   -- The variable (Value) is a boolean on whether the toggle is true or false
+               local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+               for i, v in pairs(game:GetService("Workspace").GameAssets.GlobalAssets.Dollar:GetChildren()) do
+                  if v:lsA("MeshPart") then
+                     rootPart.Dollar = v.Dollar wait(0.2)
+                  end
+                  end
+
+
+
    end,
 })
       
