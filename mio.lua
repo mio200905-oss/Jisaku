@@ -44,8 +44,12 @@ local PlayerTab = Window:CreateTab("main", 4483362458) --Title,　Image
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
                local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-rootPart.CFrame = game:GetService("Workspace").Ignore.Dollar.CFrame
-               
+               for i, v in pairs(game:GetService("Workspace").Ignore:GetChildren()) do
+                  if v:lsA("MeshPart")then
+                     rootPart.CFrame = v.CFrame wait(0.2)
+                  end
+               end
+
 
    end,
 })
