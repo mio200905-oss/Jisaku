@@ -45,8 +45,7 @@ local PlayerTab = Window:CreateTab("main", 4483362458) --Title,　Image
    Callback = function(Value)
                local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
 rootPart.CFrame = game:GetService("Workspace").Ignore.Dollar.CFrame
-
-getNil("Dollar", "Part").CFrame
+               
 
    end,
 })
