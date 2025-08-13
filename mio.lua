@@ -35,11 +35,10 @@ local Window = Rayfield:CreateWindow({
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
-})
 
+local PlayerTab = Window:CreateTab("main", 4483362458) --Title,　Image
+      
 local PlayerTab = Window:CreateTab("Player", 4483362458) --Title,　Image
-
-
 
 local Slider = PlayerTab:CreateSlider({
    Name = "Walkspeed",
