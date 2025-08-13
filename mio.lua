@@ -35,9 +35,19 @@ local Window = Rayfield:CreateWindow({
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
+})
 
+local MainTab = Window:CreateTab("Main", 4483362458)
 
-local PlayerTab = Window:CreateTab("Player", 4483362458) --Title,　Image
+local Button = MainTab:CreateButton({
+   Name = "Tp Money",
+   Callback = function()
+   local rootPart = game.Players.LocalPayer.Character.HumanoidRootPart
+  rootPart.CFrame = game:GetService("Workspace").Ignore.Dollar.CFrame
+   end,
+})
+
+local PlayerTab = Window:CreateTab("Player", 4483362458)
 
 local Slider = PlayerTab:CreateSlider({
    Name = "Walkspeed",
@@ -47,7 +57,7 @@ local Slider = PlayerTab:CreateSlider({
    CurrentValue = 16,
    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
-   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (100)
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
 end,
 })
 
@@ -63,4 +73,4 @@ local Slider = PlayerTab:CreateSlider({
 end,
 })
 
-      local PlayerTab = Window:CreateTab("Main", 4483362458)
+local PlayerTab = Window:CreateTab("Value", 4483362458)
