@@ -49,9 +49,7 @@ local PlayerTab = Window:CreateTab("Main", 4483362458) --Title,　Image
                      rootPart.CFrame = v.CFrame wait(0.2)
                   end
                end
-
-
-   end,
+end,
 })
       
 local PlayerTab = Window:CreateTab("Player", 4483362458) --Title,　Image
