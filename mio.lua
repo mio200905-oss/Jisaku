@@ -73,5 +73,3 @@ local Slider = PlayerTab:CreateSlider({
    game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
 end,
 })
-
-local PlayerTab = Window:CreateTab("Value", 4483362458) -- Title,　Image
