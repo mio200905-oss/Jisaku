@@ -36,8 +36,7 @@ local Window = Rayfield:CreateWindow({
       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 
-local PlayerTab = Window:CreateTab("Main", 4483362458) --Title,　Image
-      
+
 local PlayerTab = Window:CreateTab("Player", 4483362458) --Title,　Image
 
 local Slider = PlayerTab:CreateSlider({
@@ -63,3 +62,5 @@ local Slider = PlayerTab:CreateSlider({
    game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
 end,
 })
+
+      local PlayerTab = Window:CreateTab("Main", 4483362458)
