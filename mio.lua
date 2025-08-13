@@ -37,6 +37,16 @@ local Window = Rayfield:CreateWindow({
    }
 
 local PlayerTab = Window:CreateTab("main", 4483362458) --Title,　Image
+
+      local ColorPicker = Tab:CreateColorPicker({
+    Name = "auto Dollar",
+    Color = Color3.fromRGB(255,255,255),
+    Flag = "ColorPicker1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+        -- The function that takes place every time the color picker is moved/changed
+        -- The variable (Value) is a Color3fromRGB value based on which color is selected
+    end
+})
       
 local PlayerTab = Window:CreateTab("Player", 4483362458) --Title,　Image
 
