@@ -39,7 +39,7 @@ local Window = Rayfield:CreateWindow({
 
 local MainTab = Window:CreateTab("Main", 4483362458)
 
-local Slider = MainTab:CreateSlider({
+local Slider = ValueTab:CreateSlider({
    Name = "cooldownE",
    Range = {0, 10},
    Increment = 1,
