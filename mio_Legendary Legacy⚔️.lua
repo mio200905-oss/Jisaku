@@ -40,7 +40,7 @@ local Window = Rayfield:CreateWindow({
 local MainTab = Window:CreateTab("Main", 4483362458)
 
 local Button = MainTab:CreateButton({
-   Name = "実装予定😃",
+   Name = "😃",
    Callback = function()
    end,
 })
