@@ -71,7 +71,7 @@ local Slider = PlayerTab:CreateSlider({
 end,
 })
 
-local PlayerTab = Window:CreateTab("Value", 4483362458)
+local ValueTab = Window:CreateTab("Value", 4483362458)
 
 local Slider = ValueTab:CreateSlider({
    Name = "CoolDownE",
