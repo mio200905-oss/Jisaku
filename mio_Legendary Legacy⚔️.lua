@@ -42,7 +42,6 @@ local MainTab = Window:CreateTab("Main", 4483362458)
 local Button = MainTab:CreateButton({
    Name = "Button Example",
    Callback = function()
-         print("実装予定だよ😃")
    end,
 })
 
