@@ -43,7 +43,7 @@ local Button = MainTab:CreateButton({
    Name = "Button Example",
    Callback = function()
    -- The function that takes place when the button is pressed
-         print(実装予定だよ😃)
+         print("実装予定だよ😃")
    end,
 })
 
