@@ -40,7 +40,7 @@ local Window = Rayfield:CreateWindow({
 local MainTab = Window:CreateTab("Main", 4483362458)
 
 local Button = MainTab:CreateButton({
-   Name = "😃",
+   Name = "coming soon",
    Callback = function()
    end,
 })
@@ -72,17 +72,3 @@ end,
 })
 
 local PlayerTab = Window:CreateTab("Value", 4483362458)
-
-local Slider = ValueTab:CreateSlider({
-   Name = "cooldownE",
-   Range = {0, 10},
-   Increment = 1,
-   Suffix = "Cooldown",
-   CurrentValue = 5,
-   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-while wait() do
-   game:GetService("Players").LocalPlayer.cooldownE.Value = (Value)
-end
-end,
-})
