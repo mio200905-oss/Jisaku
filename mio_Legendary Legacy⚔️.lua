@@ -72,3 +72,17 @@ end,
 })
 
 local PlayerTab = Window:CreateTab("Value", 4483362458)
+
+local Slider = ValueTab:CreateSlider({
+   Name = "CoolDownE",
+   Range = {0, 10},
+   Increment = 1,
+   Suffix = "CoolDown",
+   CurrentValue = 5,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+         while wait() do
+   game:GetService("Players").LocalPlayer.cooldownE.Value = (Value)
+end
+   end,
+})
