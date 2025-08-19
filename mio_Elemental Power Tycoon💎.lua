@@ -74,3 +74,15 @@ end,
 })
 
 local PlayerTab = Window:CreateTab("Value", 4483362458)
+
+   local Slider = ValueTab:CreateSlider({
+   Name = "Money",
+   Range = {0, 99999999},
+   Increment = 999999,
+   Suffix = "Money",
+   CurrentValue = 999999,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+                  game:GetService("Players").LocalPlayer.leaderstats.Money = (Value)
+   end,
+})
