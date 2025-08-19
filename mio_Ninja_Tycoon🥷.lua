@@ -49,6 +49,6 @@ local Button = MainTab:CreateButton({
 local Button = MainTab:CreateButton({
    Name = "Pain",
    Callback = function()
-   game:GetService("workspace").AkatsukeShowdownFolder.AkatMemberHolder.Pain.Humanoid.Health = (0)
+   workspace.AkatsukeShowdownFolder.AkatMemberHolder.Pain.Humanoid.Health = (0)
    end,
 })
