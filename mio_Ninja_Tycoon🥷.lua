@@ -47,17 +47,8 @@ local Button = MainTab:CreateButton({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Akatuki",
+   Name = "pain",
    Callback = function()
-   workspace.AkatsukeShowdownFolder.AkatMemberHolder.Daydara.Humanoid.Health = (0)
-   workspace.AkatsukeShowdownFolder.AkatMemberHolder.Hiddan.Humanoid.Health　= (0)
-   workspace.AkatsukeShowdownFolder.AkatMemberHolder.Idachi.Humanoid.Health = (0)
-   workspace.AkatsukeShowdownFolder.AkatMemberHolder.Kebazu.Humanoid.Health = (0)
-   workspace.AkatsukeShowdownFolder.AkatMemberHolder.Kizome.Humanoid.Health = (0)
-   workspace.AkatsukeShowdownFolder.AkatMemberHolder.Kunin.Humanoid.Health = (0)
    workspace.AkatsukeShowdownFolder.AkatMemberHolder.Pain.Humanoid.Health = (0)
-   workspace.AkatsukeShowdownFolder.AkatMemberHolder.Saisoni.Humanoid.Health = (0)
-   workspace.AkatsukeShowdownFolder.AkatMemberHolder.Toby.Humanoid.Health = (0)
-   workspace.AkatsukeShowdownFolder.AkatMemberHolder.Zatsu.Health = (0)
    end,
 })
