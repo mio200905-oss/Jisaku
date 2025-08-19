@@ -77,6 +77,8 @@ local Toggle = MainTab:CreateToggle({
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
+         while wait() do
    workspace.all.Humanoid.Health = (0)
+         end
    end,
 })
