@@ -53,10 +53,9 @@ local Button = MainTab:CreateButton({
    end,
 })
 
-local Button = MainTab:CreateButton({
+local Button = Tab:CreateButton({
    Name = "Juubito",
    Callback = function()
    workspace.Juubito.Humanoid.Health = (0)
    end,
 })
-
