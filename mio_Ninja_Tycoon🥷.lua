@@ -45,10 +45,3 @@ local Button = MainTab:CreateButton({
    workspace.Kaguyai.Humanoid.Health = (0)
    end,
 })
-
-local Button = MainTab:CreateButton({
-   Name = "Sound Ninja",
-   Callback = function()
-   workspace["Sound Ninja"].Humanoid.Health = (0)
-   end,
-})
