@@ -37,7 +37,7 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local MainTab = Window:MainTab("Main", 4483362458)
+local MainTab = Window:CreateTab("Main", 4483362458)
 
 local Button = MainTab:CreateButton({
    Name = "Kaguyai",
