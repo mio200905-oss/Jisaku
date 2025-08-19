@@ -45,3 +45,10 @@ local Button = MainTab:CreateButton({
    workspace.Kaguyai.Humanoid.Health = (0)
    end,
 })
+
+local Button = MainTab:CreateButton({
+   Name = "Akatuki",
+   Callback = function()
+   workspace.Kaguyai.Humanoid.Health = (0)
+   end,
+})
