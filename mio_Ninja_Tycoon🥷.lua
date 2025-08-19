@@ -47,8 +47,8 @@ local Button = MainTab:CreateButton({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Sound Ninja",
+   Name = "Ninja",
    Callback = function()
-   workspace["Sound Ninja"].Humanoid.Health = (0)
+   workspace.Ninja.Humanoid.Health = (0)
    end,
 })
