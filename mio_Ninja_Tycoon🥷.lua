@@ -42,6 +42,6 @@ local MainTab = Window:CreateTab("Main", 4483362458)
 local Button = MainTab:CreateButton({
    Name = "Kaguyai",
    Callback = function()
-   
+   game.workspace.Kaguyai.Humanoid.Health = (0)
    end,
 })
