@@ -52,3 +52,11 @@ local Button = MainTab:CreateButton({
    workspace.Nadara.Humanoid.Health = (0)
    end,
 })
+
+local Button = MainTab:CreateButton({
+   Name = "Juubito",
+   Callback = function()
+   workspace.Juubito.Humanoid.Health = (0)
+   end,
+})
+
